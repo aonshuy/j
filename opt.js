@@ -18,4 +18,4 @@ if (paras.t==="wmj")
     dst = `wameiji://main/${paras.dst}`
 
 console.log(paras.dst)
-//location.href = dst
+location.href = dst
