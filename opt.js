@@ -13,9 +13,11 @@ function getUrlParams(url) {
 	return obj
 }
 let dst
+let el = document.getElementById("jmp")
 let paras = getUrlParams(location.href)
 if (paras.t==="wmj")
     dst = `wameiji://main/${paras.dst}`
 
 console.log(paras.dst)
-location.href = dst
+el.href = dst
+el.click()
