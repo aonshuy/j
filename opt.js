@@ -18,6 +18,6 @@ let paras = getUrlParams(location.href)
 if (paras.t==="wmj")
     dst = `wameiji://main/${paras.dst}`
 
-console.log(paras.dst)
+console.log(dst)
 el.href = dst
 el.click()
