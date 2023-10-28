@@ -20,23 +20,6 @@ window.onload = () => {
         el.click()
     }
 
-    let _log = (msg) => {
-        let log_el = document.getElementById('log')
-        log_el.innerText = msg
-    }
-
     let paras = getUrlParams(location.href)
-
-    let btn = document.getElementById('btn')
-    btn.setAttribute('data-clipboard-text', paras.dst)
-    let cb = new ClipboardJS('#btn');
-    cb.on('success', function (e) {
-        console.log('copy success')
-        _log('copied!')
-        jumpApp(paras)
-    })
-    cb.on('error', function (e) {
-        console.log('copy error')
-        jumpApp(paras)
-    })
+    jumpApp(paras)
 }
