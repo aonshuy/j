@@ -14,7 +14,7 @@ window.onload = () => {
         let dst = 'mo match'
         let el = document.createElement('a')
         if (paras.t === "wmj")
-            dst = `wameiji://${paras.dst}`
+            dst = `wameiji://main/${paras.dst}`
         console.log(dst)
         el.href = dst
         el.click()
